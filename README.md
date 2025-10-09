@@ -78,3 +78,4 @@ This is work in progress.
 - [Tracking Toy Model Demo](https://github.com/Xenofon-Chiotopoulos/Tracking_Toy_model/blob/main/example_notebook.ipynb)
 - [D. Nicotra et al., arXiv:2308.00619v2, 7 Oct 2023, A quantum algorithm for track reconstruction in the LHCb vertex detector](https://arxiv.org/pdf/2308.00619)
 - [SQD_Alain](https://github.com/AlainChance/SQD_Alain)
+- [TrackHHL: A Quantum Computing Algorithm for Track Reconstruction at the LHCb Experiment](https://indico.cern.ch/event/1338689/contributions/6010017/attachments/2951297/5188722/CHEP_ppt.pdf)
