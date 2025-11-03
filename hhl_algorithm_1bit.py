@@ -38,7 +38,13 @@
 #   self.angle_pi = angle_pi
 #   self.max_abs_eigen = max_abs_eigen
 #   self.t = np.pi / self.max_abs_eigen
-
+#
+# In Qiskit v2.2.2, there is a known bug with qpy that causes 
+# an `IndexError: index out of range` if a register starts with the name ancilla
+# Changed the register name "ancilla" to "qr_ancilla" as follows:
+#self.ancilla_qr = QuantumRegister(1, "ancilla")
+# self.ancilla_qr = QuantumRegister(1, "qr_ancilla")
+#
 # Commented out:
 #   self.eigenvalues = np.linalg.eigvals(self.A_orig)
 #   self.eigenvalues_scaled = np.linalg.eigvals(self.A)
@@ -146,7 +152,14 @@ class HHLAlgorithm:
 
         self.time_qr = QuantumRegister(self.num_time_qubits, "time")
         self.b_qr = QuantumRegister(self.num_system_qubits, "b")
-        self.ancilla_qr = QuantumRegister(1, "ancilla")
+        #--------------------------------------------------------------------------------
+        # Modified by Alain Chancé
+        # In Qiskit v2.2.2, there is a known bug with qpy that causes 
+        # an `IndexError: index out of range` if a register starts with the name ancilla
+        # Changed the register name "ancilla" to "qr_ancilla" as follows:
+        #self.ancilla_qr = QuantumRegister(1, "ancilla")
+        self.ancilla_qr = QuantumRegister(1, "qr_ancilla")
+        #--------------------------------------------------------------------------------
         self.classical_reg = ClassicalRegister(1 + self.num_system_qubits, "c")
 
         self.circuit = None
