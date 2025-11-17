@@ -1476,16 +1476,24 @@ class One_Bit_HHL:
             job_id = param["job_id"]
 
             if job_id is not None:
+                print("job_id:", job_id)
                 #-------------------------------
                 # Retrieve the job using its ID
                 #-------------------------------
-                job = self.service.job(job_id)
-
+                OK = True
+                result = None
+                    
                 try:
-                    result = job.result()
+                    job = self.service.job(job_id)
                 except Exception as e:
-                    print(f"Error retrieving job result: {e}")
-                    return
+                    print(f"Error retrieving job_id {job_id}: {e}")
+                    OK = False
+
+                if OK:
+                    try:
+                        result = job.result()
+                    except Exception as e:
+                        print(f"Error retrieving job result: {e}")
             else:
                 #----------------------------------------------------
                 # Running the quantum circuit on the target hardware
