@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lhcb_velo_toy_model"
+version = "0.1"
+description = "Toy model for LHCb VELO"
+authors = [{ name = "Alain Chancé" }]
+
+[tool.setuptools]
+packages = ["Alain", "LHCB_Velo_Toy_Models"]
