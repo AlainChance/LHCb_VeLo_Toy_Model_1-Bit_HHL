@@ -1,0 +1,2 @@
+id,project_name,experiment_description,epoch,start_time,duration(s),power_consumption(kWh),CO2_emissions(kg),CPU_name,GPU_name,OS,region/country,cost
+f16adaf7-57ab-4bc1-a372-72dbd402c0e6,One_Bit_HHL,HHL_1024_p_7_l_find_tracks,N/A,2026-02-07 21:35:16,3.5901575088500977,1.8177301754174584e-05,1.2275131874594097e-06,"AMD Ryzen 7 6800H with Radeon Graphics/1 device(s), TDP:45.0",NVIDIA GeForce RTX 3070 Ti Laptop GPU 1 device(s),Linux,FR/Normandy,0
