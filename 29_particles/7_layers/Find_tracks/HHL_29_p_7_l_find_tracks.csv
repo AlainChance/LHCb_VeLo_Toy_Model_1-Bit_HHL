@@ -1,0 +1,2 @@
+id,project_name,experiment_description,epoch,start_time,duration(s),power_consumption(kWh),CO2_emissions(kg),CPU_name,GPU_name,OS,region/country,cost
+3db98875-06d0-4d4c-9f75-b7853be6e9ff,One_Bit_HHL,HHL_29_p_7_l_find_tracks,N/A,2026-02-16 06:24:08,45.09130001068115,2.5217748822282284e-05,1.7029545779687227e-06,"Intel(R) Core(TM) Ultra 9 185H/1 device(s), TDP:45.0", 0 device(s),Linux,FR/Île-de-France,0
